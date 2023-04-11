@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper Self</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <style>
+        #buttonsDiv{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+
+
+    <div class="card">
+        <div class="card-header">
+            <h2 class="text-center">Player One: <span id="p1Score">0</span> - <span id="p2Score">0</span> Player Two</h2>
+        </div>
+        <div class="card-body">
+          <h5 class="text-center fs-3 card-title">Use the buttons below to decide who wins!!!</h5>
+          <p class="text-center fs-4 card-text">Playing to :</p>
+          <select class = "text-center form-select rounded text-primary" name="playingTo" id="playingTo"> 
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            </select>
+            <div id="buttonsDiv" class="pt-4">
+          <button class="btn btn-primary mx-2" id="incP1Button">+1 Player One</button>
+          <button class="btn btn-danger mx-2" id="incP2Button">+1 Player Two</button>
+          <button class="btn btn-success mx-2 px-4" id="resetButton">Reset</button> 
+          </div>
+        </div>
+      </div>
+
+
+
+
+    <!-- <h2><span id="p1Score">0</span> - <span id="p2Score">0</span></h2> -->
+    <!-- <b>Playing to</b>
+    <select name="playingTo" id="playingTo"> 
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    </select> -->
+
+    <!-- <button id="incP1Button">+1 Player One</button>
+    <button id="incP2Button">+1 Player Two</button>
+    <button id="resetButton">Reset</button> -->
+</body>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</html>
